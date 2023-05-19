@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        body {
+            background-image: url("IMGs/BG.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+<script>
+    let num = 1;
+
+    function anterior() {
+        num = (num - 1) < 1 ? 5 : (num - 1);
+        document.getElementById("img_P").src = "IMGs/" + num + ".jpg";
+    }
+
+    function siguiente() {
+        num = (num + 1) > 5 ? 1 : (num + 1);
+        document.getElementById("img_P").src = "IMGs/" + num + ".jpg";
+    }
+</script>
+
+
+</head>
+
+
+<body style="background-color:#1d2020;">
+    
+   <center> <h1 style="color: aliceblue;"> Honkai: Star Rail </h1> </center>
+   <br>
+   <center><b style="color: aliceblue;">RESEÑA</b></center>
+   <br>
+   <br>
+   <center> <d style="color: aliceblue;"> Hablar de Honkai: Star Rail como "el nuevo juego de los creadores de Genshin Impact" es bueno para situarse. 
+    La definición nos lleva a un lugar común, a una zona que combina expectativas elevadísimas con deseos que jamás podremos ver realizados. 
+    Habla de un buen juego, de personajes únicos emblemáticos y de una historia más centrada en pequeñas cosas que en grandes acontecimientos. 
+    HoYoverse es sinónimo de calidad técnica y jugabilidad espectacular. Una compañía con sus luces y sus sombras que, vaya por delante, acaba de estrenar el mejor videojuego de toda su trayectoria.</d>
+       <br>
+       <br>
+       <br>
+       <br>
+
+
+
+
+    <img id="img_P" src="IMGs/1.jpg" alt="Imagen carteles" width="1280">
+    <br>
+    <br>
+    <button id="btn_ant" type="button" onclick="anterior()">Anterior</button>
+    <button id="btn_sig" type="button" onclick="siguiente()">Siguiente</button>
+
+
+
+
+
+
+
+   <table cellspacing="10" cellpadding="10" border="3" style="background-color:#c4d4e9;margin-top:20px;"> 
+
+    <caption>Datos del juego</caption>  
+
+    <tr>
+        <th>Año de publicación</th>
+        <th>Productora</th>      
+    </tr>
+
+    <tr>
+        <td>2023</td>
+        <td>HoYoverse</td>
+    </tr>
+
+    </table>
+    <br>
+    <br>
+
+
+    <img src="IMGs/seele.webp" alt="Seele_Promo" > <img src="IMGs/JingYuan.webp" alt="JingYuan_Promo">
+
+    
+</body>    
+</html>
